@@ -1,0 +1,11 @@
+# Don't publish our secrets template or local env!
+.env
+.env.example
+
+# Don't publish git history or IDE settings
+.git/
+.idea/
+.vscode/
+
+# Don't publish backups
+*.bak.md
