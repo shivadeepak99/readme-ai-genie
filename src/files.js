@@ -3,7 +3,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import ignore from 'ignore';
 
-const MAX_BYTES = 5 * 1024 * 1024; // 5 MB cap
+const MAX_BYTES = 5 * 1024 * 1024;
 
 /**
  * Scans the project directory for relevant files, respecting .gitignore and .env rules.

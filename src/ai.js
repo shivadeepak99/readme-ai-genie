@@ -3,10 +3,7 @@ import fetch from 'node-fetch';
 import chalk from 'chalk';
 import { personalities } from './styles.js';
 
-/**
- * The Pantheon of Oracles - V1 Launch Edition
- * Prioritizing our free, powerful, and ready allies.
- */
+
 const providers = [
   {
     name: 'Gemini',
@@ -18,63 +15,9 @@ const providers = [
     },
   },
 
-  // {
-  //   name: 'CodeLLaMA',
-  //   execute: async (prompt, key) => {
-  //     const response = await fetch('https://api-inference.huggingface.co/models/codellama/CodeLlama-34b-Instruct-hf', {
-  //       method: 'POST',
-  //       headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
-  //       body: JSON.stringify({ inputs: prompt }),
-  //     });
-  //     const data = await response.json();
-  //     return data?.[0]?.generated_text || data?.generated_text || '';
-  //   },
-  // },
-  // {
-  //   name: 'Phi3',
-  //   execute: async (prompt, key) => {
-  //     const response = await fetch('https://api-inference.huggingface.co/models/microsoft/Phi-3-mini-128k-instruct', {
-  //       method: 'POST',
-  //       headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
-  //       body: JSON.stringify({ inputs: prompt }),
-  //     });
-  //     const data = await response.json();
-  //     return data?.[0]?.generated_text || data?.generated_text || '';
-  //   },
-  // },
-  // {
-  //   name: 'DeepSeek',
-  //   execute: async (prompt, key) => {
-  //     const response = await fetch('https://api-inference.huggingface.co/models/deepseek-ai/deepseek-coder-6.7b-instruct', {
-  //       method: 'POST',
-  //       headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
-  //       body: JSON.stringify({ inputs: prompt }),
-  //     });
-  //     const data = await response.json();
-  //     return data?.[0]?.generated_text || data?.generated_text || '';
-  //   },
-  // },
-  //   {
-  //   name: 'Groq',
-  //   execute: async (prompt, key) => {
-  //     const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-  //       method: 'POST',
-  //       headers: { 'Authorization': `Bearer ${key}`, 'Content-Type': 'application/json' },
-  //       body: JSON.stringify({
-  //         messages: [{ role: 'user', content: prompt }],
-  //         model: process.env.GROQ_MODEL || 'llama3-8b-8192',
-  //       }),
-  //     });
-  //     const data = await response.json();
-  //     if (!data.choices || data.choices.length === 0) {
-  //       throw new Error(data.error?.message || 'Groq API returned no choices.');
-  //     }
-  //     return data.choices[0].message.content;
-  //   }
-  // },
 ];
 
-// --- All other functions remain the same, perfectly forged ---
+
 
 function getStylistPrompt(style = 'default') {
   const baseInstructions = `
