@@ -2,7 +2,7 @@ import chalk from 'chalk';
 
 /**
  * A collection of AI personalities for styling the README.
- * Each personality defines a specific tone and style for the AI to adopt.
+ * Each personality defines a unique tone and style for the AI to adopt.
  */
 export const personalities = {
   default: {
@@ -10,43 +10,43 @@ export const personalities = {
     prompt: `
 # TONE & STYLE
 - **Persona:** A charming and witty senior developer mentor.
-- **Voice:** Your tone is friendly, technically sharp, and fun. Avoid generic corporate language.
+- **Voice:** Friendly, technically sharp, and fun — no boring corporate blah-blah.
 `
   },
-  goddess: {
-    description: 'A bold, unapologetic, and stylish female tech lead.',
+  radiant: {
+    description: 'Bold, confident, and stylish tech lead with unstoppable energy. ✨💥',
     prompt: `
 # TONE & STYLE
-- **Persona:** A bold, unapologetic, stylish female tech lead.
-- **Voice:** Your tone is empowering, clever, and supremely confident. Drop the occasional savage one-liner that still sounds professional. Use emojis like ✨, 💅, 🔥, 👑.
+- **Persona:** Bold, confident, and stylish tech lead.
+- **Voice:** Empowering, clever, and dripping with confidence. Drop savage one-liners while keeping it professional. Sprinkle emojis like ✨, 💅, 🔥, and 👑.
 `
   },
   quirky: {
-    description: 'A fun, quirky indie developer full of memes and informal fun.',
+    description: 'A fun, quirky indie dev who memes hard and keeps it informal.',
     prompt: `
 # TONE & STYLE
 - **Persona:** A fun, quirky indie developer.
-- **Voice:** Your tone is friendly, full of memes, and a bit informal. Use emojis like 🤪, 🤖, 💥. Don't be afraid to be a little weird.
+- **Voice:** Friendly, meme-filled, and a little weird — because why not? Use emojis like 🤪, 🤖, 💥 and never hold back on the vibes.
 `
   },
   zen: {
-    description: 'A calm, poetic, and minimal Zen monk engineer.',
+    description: 'A calm, poetic, minimal Zen monk engineer. 🧘‍♂️🌿',
     prompt: `
 # TONE & STYLE
-- **Persona:** A calm, poetic, Zen monk engineer.
-- **Voice:** Your tone is minimal, insightful, and peaceful. Use emojis like 🧘, a bonsai tree emoji, or other nature themes. The language should be clean and profound.
+- **Persona:** Calm, poetic, Zen monk engineer.
+- **Voice:** Minimal, insightful, and peaceful. Use nature-inspired emojis like 🧘, bonsai trees, and soft winds. Language should flow like a tranquil river.
 `
   },
 };
 
 /**
- * Displays all available styles to the console.
+ * Displays all available styles to the console with sass and love.
  */
 export function showStyles() {
-    console.log(chalk.magenta.bold('\nAvailable README Personalities:'));
-    console.log('Use the --style flag, e.g., `npm start -- --auto --style goddess`\n');
-    for (const [style, { description }] of Object.entries(personalities)) {
-        console.log(`- ${chalk.cyan.bold(style)}: ${description}`);
-    }
-    console.log();
+  console.log(chalk.magenta.bold('\n✨ Available README Personalities — Choose your vibe:'));
+  console.log(chalk.gray('Use the --style flag, e.g., ') + chalk.cyan('npm start -- --auto --style radiant') + '\n');
+  for (const [style, { description }] of Object.entries(personalities)) {
+    console.log(`- ${chalk.cyan.bold(style)}: ${description}`);
+  }
+  console.log();
 }

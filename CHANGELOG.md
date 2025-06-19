@@ -7,14 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [1.0.0] - 2025-06-18
+## [1.0.1] - 2025-06-19
 
-### Added
+### Fixed
 
-- Initial release of the AI-Powered README Genie!
-- Dual AI pipeline for structured drafting and stylistic enhancement.
-- Support for selectable AI personalities (`--style` flag).
-- Intelligent file scanning that respects `.gitignore`.
-- Interactive review flow for user approval and editing.
-- Professional CLI with flags for help, version, output, and styles.
-- Secure API key handling via `.env` file with multi-key rotation.
+- Removed chaining logic for multiple AI providers; now uses only Google Gemini for smoother, reliable API calls.
+- Improved API key handling with an interactive prompt for first-time setup, guiding users to obtain and save their Gemini key easily.
+- Optimized console messages and error handling for cleaner user experience.
+- Minor typo fixes and formatting tweaks across the codebase.
+- Updated documentation and CLI help messages to reflect single-provider usage.

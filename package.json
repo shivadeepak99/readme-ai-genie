@@ -1,9 +1,13 @@
 {
   "name": "readme-ai-genie",
-  "version": "1.0.0",
-  "description": "An AI-powered CLI that automatically scans your project and generates a high-quality README.md file using Google Gemini.",
-  "author": "Shivadeepak99",
+  "version": "1.0.1",
+  "description": "An AI-powered CLI that scans your project and automatically generates a stunning, professional README.md using Google Gemini.",
+  "author": {
+    "name": "Shivadeepak",
+    "url": "https://github.com/shivadeepak99"
+  },
   "license": "MIT",
+  "homepage": "https://github.com/shivadeepak99/readme-ai-genie#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shivadeepak99/readme-ai-genie.git"
@@ -14,8 +18,19 @@
   "main": "index.js",
   "type": "module",
   "bin": {
-    "readme-genie": "bin/index.js"
+    "readme-ai-genie": "bin/index.js"
   },
+  "keywords": [
+    "readme",
+    "cli",
+    "documentation",
+    "ai",
+    "google-gemini",
+    "automation",
+    "developer-tools",
+    "open-source",
+    "readme-generator"
+  ],
   "scripts": {
     "start": "node index.js",
     "lint": "eslint . --fix",
@@ -29,7 +44,7 @@
     "fast-glob": "^3.3.2",
     "ignore": "^5.3.1",
     "inquirer": "^9.2.23",
-    "node-fetch": "^3.3.2"
+    "open": "^10.1.0"
   },
   "devDependencies": {
     "eslint": "^8.40.0",
