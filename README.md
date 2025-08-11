@@ -1,7 +1,7 @@
 # 🧞‍♂️ readme-ai-genie 🔮✨
 
 [![npm version](https://img.shields.io/npm/v/readme-ai-genie.svg)](https://www.npmjs.com/package/readme-ai-genie)         [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-
+## VERSION 2 COMING SOON... WITH A CREW OF AI 
 > **Your project’s personal AI stylist for killer documentation.** > 🪄 From skeleton code to storybook-ready—let our AI genie craft and style your README like a pro, powered by Google Gemini.
 
 ---
